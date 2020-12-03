@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".AbsenDatang">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Absen Datang"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"/>
+    <RelativeLayout
+        android:id="@+id/layoutPicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/foto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_camera" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambil Gambar"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/foto" />
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/nama_absen_datang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Sales" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/lokasi_absen_datang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lokasi"
+            android:maxLines="5"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/waktu_absen_datang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lokasi"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/waktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Waktu"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_rounded_outline"
+        android:layout_below="@id/waktu_absen_datang" />
+
+</RelativeLayout>

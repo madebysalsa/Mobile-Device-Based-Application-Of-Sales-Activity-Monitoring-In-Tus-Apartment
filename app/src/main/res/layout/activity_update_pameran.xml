@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".UpdatePameran">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_pelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_pelanggan"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"/>
+
+    <TextView
+        android:id="@+id/text_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/event"
+        android:textSize="18sp"
+        android:textColor="@color/colorText"
+        android:layout_below="@id/text_pelanggan" />
+
+    <Spinner
+        android:id="@+id/sp_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/jenis_event"
+        android:layout_below="@id/text_event"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/i_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_event"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/et_nama_pelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nama_pelanggan"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/i_telp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i_nama"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/et_no_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/no_telp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/i_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i_telp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/et_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/alamat"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/l_tanggal"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i_alamat">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_tanggal"
+                android:hint="Waktu"
+                android:inputType="date"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/status"
+        android:textSize="18sp"
+        android:textColor="@color/colorText"
+        android:layout_below="@id/l_tanggal" />
+
+    <Spinner
+        android:id="@+id/sp_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/status_pel"
+        android:layout_below="@id/text_status"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/i_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_status"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/et_keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/keterangan"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_tambah"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_rounded_outline"
+        android:layout_below="@id/i_keterangan" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

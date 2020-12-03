@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Apartemen Urban Sky</string>
+    <string name="register">Register</string>
+    <string name="Nama">Nama</string>
+    <string name="Username">Nama Pengguna</string>
+    <string name="Password">Kata Sandi</string>
+
+    <string name="prefLoginState">loginstate</string>
+    <string name="selamat_datang">Selamat datang</string>
+
+
+    <string name="gender_unknown">Unknown</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="Canvasing" />
+    <string name="pameran">Pameran</string>
+
+    <string name="data_pelanggan">Data Prospek</string>
+    <string name="update_data">Update Data Pelanggan Pameran</string>
+    <string name="event">Jenis Event</string>
+    <string name="nama_pelanggan">Nama</string>
+    <string name="no_telp">No. Telepon</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="alamat">Alamat</string>
+    <string name="tgl_daftar">Tanggal Daftar</string>
+    <string name="status">Status</string>
+    <string name="keterangan">Keterangan</string>
+
+    <string name="cari">Cari...</string>
+
+    <string name="btn_tambah">Tambah</string>
+    <string name="btn_update">Update</string>
+
+    <string-array name="status_pel">
+        <item>Database/Prospect/Hot Prospect/Tidak Minat</item>
+        <item>Database</item>
+        <item>Prospect</item>
+        <item>Hot Prospect</item>
+        <item>Tidak Minat</item>
+    </string-array>
+
+    <string-array name="jenis_event">
+        <item>Pilih Jenis Event</item>
+        <item>Pameran</item>
+        <item>Event Kawasan</item>
+        <item>Canvasing</item>
+        <item>Flyring</item>
+        <item>Follow Up Database</item>
+        <item>Digital</item>
+        <item>Call In</item>
+        <item>Guest In</item>
+
+    </string-array>
+
+    <string-array name="jenis_kegiatan">
+        <item>Pameran/Event Kawasan/Open Table/Canvasing/Flyring</item>
+        <item>Pameran</item>
+        <item>Event Kawasan</item>
+        <item>Open Table</item>
+        <item>Canvasing</item>
+        <item>Flyring</item>
+    </string-array>
+
+</resources>

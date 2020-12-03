@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".TambahSales">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Kegiatan Sales"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/i_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/et_nama_sales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Sales" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/jabatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i_nama"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/et_jabatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jabatan"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/i_jkel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jabatan"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <EditText
+            android:id="@+id/et_jkel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis Kelamin"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/jenis_kegiatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Jenis Kegiatan"
+        android:textSize="18sp"
+        android:textColor="@color/colorText"
+        android:layout_below="@id/i_jkel"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/i_jkeg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/jenis_kegiatan"
+        android:layout_below="@id/jenis_kegiatan"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="10dp"/>
+
+    //kalender
+    <LinearLayout
+        android:id="@+id/l_tanggal"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i_jkeg"
+        android:layout_marginTop="8dp">
+
+        <ImageButton
+            android:id="@+id/kalender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_date"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_tanggal"
+                android:hint="@string/tgl_daftar"
+                android:inputType="date"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_tambah"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_rounded_outline"
+        android:layout_below="@id/l_tanggal" />
+</RelativeLayout>
